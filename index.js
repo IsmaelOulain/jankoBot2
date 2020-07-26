@@ -41,7 +41,7 @@ client.on('message', async message => {
         const connection = await message.member.voice.channel.join();
         
         message.channel.send(attachment);
-        const dispatcher = connection.play('./record/cha_ndu.ogg');
+        const dispatcher = connection.play('./record/cha_ndu.mp3');
       } else {
         message.reply('big fail fra');
       }
