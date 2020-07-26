@@ -69,7 +69,7 @@ client.on('message', async message => {
          const connection = await message.member.voice.channel.join();
          
          //message.channel.send(attachment);
-         const dispatcher = connection.play('./record/fana.ogg');
+        // const dispatcher = connection.play('./record/fana.ogg');
        } else {
          message.reply('big fail fra');
        }
