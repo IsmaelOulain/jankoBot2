@@ -19,7 +19,7 @@ client.on('message', async message => {
       message.channel.send('/ok AHH OKKKKEEEYYYY');
       message.channel.send('/eva sisqo che dice per l ennesima volta di vedere evangelion ');
       message.channel.send('/balzo beh.. il king di como lake');
-      message.channel.send('/fanatic la collaborazione che interessa a sisqo');
+      message.channel.send('/fnatic la collaborazione che interessa a sisqo');
 
 
     }
