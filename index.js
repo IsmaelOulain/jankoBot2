@@ -165,6 +165,20 @@ client.on('message', async message => {
       }
     }
     break;
+      case '/notlnt':{
+      if (message.member.voice.channel) {
+        // const ayy = client.emojis.find(emoji => emoji.name === "cha");
+         //message.reply(`${ayy} LMAO`);
+         //const attachment = new MessageAttachment('https://imgur.com/wJK5ggK.png');
+         const connection = await message.member.voice.channel.join();
+         
+         //message.channel.send(attachment);
+         const dispatcher = connection.play('./record/squid.mp3');
+       } else {
+         message.reply('big fail fra');
+       }
+    }
+    break;
   
   }
   if (message.content === '/join') {
