@@ -113,6 +113,8 @@ client.on('message', async message => {
         const dispatcher = connection.play('./record/whods.mp3');
 
 
+      }else {
+        message.reply('big fail fra');
       }
     }
     break;
