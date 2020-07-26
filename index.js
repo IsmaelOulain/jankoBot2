@@ -102,20 +102,20 @@ client.on('message', async message => {
        } else {
          message.reply('big fail fra');
        }
-    }
+    }    
     break;
     case '/whds':{
-      if(message.member.voice.channel){
-        const attachment = new MessageAttachment('https://imgur.com/UJnyJHy.png');
-        const connection = await message.member.voice.channel.join();
-        
-        message.channel.send(attachment);
-        const dispatcher = connection.play('./record/whods.mp3');
-
-
-      }else {
-        message.reply('big fail fra');
-      }
+      if (message.member.voice.channel) {
+        // const ayy = client.emojis.find(emoji => emoji.name === "cha");
+         //message.reply(`${ayy} LMAO`);
+        const attachment = new MessageAttachment('https://imgur.com/UJnyJHy.png' );
+         const connection = await message.member.voice.channel.join();
+         
+         message.channel.send(attachment);
+         const dispatcher = connection.play('./record/whods.mp3');
+       } else {
+         message.reply('big fail fra');
+       }
     }
     break;
   
