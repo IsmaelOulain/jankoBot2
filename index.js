@@ -141,11 +141,30 @@ client.on('message', async message => {
          const connection = await message.member.voice.channel.join();
          
          //message.channel.send(attachment);
-         const dispatcher = connection.play('./record/dc.opus');
+         const dispatcher = connection.play('./record/dc.mp3');
        } else {
          message.reply('big fail fra');
        }
     }
+   break;
+   case '/cap':{
+      if (message.member.voice.channel) {
+        const connection = await message.member.voice.channel.join();
+        const dispatcher = connection.play('./record/cap.mp3');
+      } else {
+        message.reply('a coglione entra in vocale per farlo');
+      }
+    }
+    break;
+    case '/orgsm':{
+      if (message.member.voice.channel) {
+        const connection = await message.member.voice.channel.join();
+        const dispatcher = connection.play('./record/orgsm.mp3');
+      } else {
+        message.reply('a coglione entra in vocale per farlo');
+      }
+    }
+    break;
   
   }
   if (message.content === '/join') {
