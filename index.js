@@ -113,6 +113,7 @@ client.on('message', async message => {
          
          message.channel.send(attachment);
          const dispatcher = connection.play('./record/whods.mp3');
+          message.member.voice.channel.leave();
        } else {
          message.reply('big fail fra');
        }
