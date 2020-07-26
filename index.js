@@ -105,7 +105,7 @@ client.on('message', async message => {
     }
     break;
     case '/whds':{
-      if(message.member.voice.channle){
+      if(message.member.voice.channel){
         const attachment = new MessageAttachment('https://imgur.com/UJnyJHy.png');
         const connection = await message.member.voice.channel.join();
         
