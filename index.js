@@ -115,6 +115,7 @@ client.on('message', async message => {
 
       }
     }
+    break;
   
   }
   if (message.content === '/join') {
