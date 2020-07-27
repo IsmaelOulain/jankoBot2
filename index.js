@@ -226,7 +226,7 @@ client.on('message', async message => {
            const connection = await message.member.voice.channel.join();
            
            //message.channel.send(attachment);
-           dispatcher.setVolume(0.5);
+          // dispatcher.setVolume(0.5);
            const dispatcher = connection.play('./record/shiton.mp3');
          } else {
            message.reply('big fail fra');
