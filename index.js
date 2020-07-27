@@ -193,7 +193,7 @@ client.on('message', async message => {
        }
     }
     break;
-    case '/ow':{
+    case '/genji':{
       if (message.member.voice.channel) {
         // const ayy = client.emojis.find(emoji => emoji.name === "cha");
          //message.reply(`${ayy} LMAO`);
