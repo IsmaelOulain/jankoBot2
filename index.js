@@ -10,11 +10,6 @@ client.on('message', async message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
   if (!message.guild) return;
-  if(cooldown.has(msg.author.id)){
-    msg.reply("cojone basta spammare ora aspetti 15 min");
-  
-  }else{
-    cooldown.add(msg.author.id);
     switch(message.content){
       case '/help':{
         message.reply('cojone che cazzo non capisci');
@@ -225,10 +220,8 @@ client.on('message', async message => {
          }
       }
     }
-    setTimeout(()=>{
-      cooldown.delete(msg.author.id);
-     },5000)
-  }
+  
+  
  
   /*setTimeout(()=>{
      message.member.voice.channel.leave();
