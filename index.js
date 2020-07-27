@@ -207,9 +207,11 @@ client.on('message', async message => {
        }
     }
   }
-  setTimeout(()=>{
+  /*setTimeout(()=>{
      message.member.voice.channel.leave();
-  },11000);//dopo 11 secondi esci
+  },11000);*/
+  
+  //dopo 11 secondi esci
   if (message.content === '/join') {
     // Only try to join the sender's voice channel if they are in one themselves
     
