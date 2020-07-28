@@ -245,9 +245,9 @@ client.on('message', async message => {
   
   
  
-  setTimeout(()=>{
+  /*setTimeout(()=>{
      message.member.voice.channel.leave();
-  },10000);
+  },10000);*/
   
   //dopo 11 secondi esci
   if (message.content === '/join') {
