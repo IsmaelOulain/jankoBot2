@@ -21,6 +21,15 @@ client.on('message', async message => {
         message.channel.send('/fnatic la collaborazione che interessa a sisqo');
   }
       break;*/
+      case '/morto':{
+        if (message.member.voice.channel) {
+          const connection = await message.member.voice.channel.join();
+          const dispatcher = connection.play('./record/morto.opus');
+        } else {
+          message.reply('a coglione entra in vocale per farlo');
+        }
+      }
+      break;
       case '/cesco':{
         if (message.member.voice.channel) {
           const connection = await message.member.voice.channel.join();
@@ -236,9 +245,9 @@ client.on('message', async message => {
   
   
  
-  /*setTimeout(()=>{
+  setTimeout(()=>{
      message.member.voice.channel.leave();
-  },11000);*/
+  },10000);
   
   //dopo 11 secondi esci
   if (message.content === '/join') {
