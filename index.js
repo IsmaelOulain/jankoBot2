@@ -12,7 +12,7 @@ client.on('message', async message => {
   if (!message.guild) return;
     switch(message.content){
       case '/help':{
-        message.reply('cojone che cazzo non capisci');
+        //message.reply('cojone che cazzo non capisci');
         message.channel.send('/chandu  \n'+'/cesco \n'+'/ok \n'+'/eva\n'+'/balzo \n'+'/fnatic\n'+'/morto\n'+'/negro\n'+'/ciao\n'+'/whds\n'+'/tourette\n'+'/dc\n'+'/cap\n'+'/notlnt\n'+'/orgsm\n'+'/drift\n'+'/shiton\n'+'/genji\n'+'/broken\n');
         //message.channel.send('/cesco l inglese di cesco');
         //message.channel.send('/ok AHH OKKKKEEEYYYY');
