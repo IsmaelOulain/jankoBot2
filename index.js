@@ -11,16 +11,17 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
     switch(message.content){
-      /*case '/help':{
+      case '/help':{
         message.reply('cojone che cazzo non capisci');
-        message.channel.send('/chandu per sentire il famigerato chandu \n'+'/cesco l inglese di cesco\n'+'/ok AHH OKKKKEEEYYYY\n'+'/eva sisqo che dice per l ennesima volta di vedere evangelion\n'+'/balzo beh.. il king di como lake\n'+'/fnatic la collaborazione che interessa a sisqo');
-        message.channel.send('/cesco l inglese di cesco');
-        message.channel.send('/ok AHH OKKKKEEEYYYY');
-        message.channel.send('/eva sisqo che dice per l ennesima volta di vedere evangelion ');
-        message.channel.send('/balzo beh.. il king di como lake');
-        message.channel.send('/fnatic la collaborazione che interessa a sisqo');
+        message.channel.send('/chandu  \n'+'/cesco \n'+'/ok \n'+'/eva\n'+'/balzo \n'+'/fnatic\n'+'/morto\n'+'/negro\n'+'/ciao\n'+'/whds\n'+'/tourette\n'+'/dc\n'+'/cap\n'+'/notlnt\n'+'/orgsm\n'+'/drift\n'+'/shiton\n'+'/genji\n'+'/broken\n');
+        //message.channel.send('/cesco l inglese di cesco');
+        //message.channel.send('/ok AHH OKKKKEEEYYYY');
+        //message.channel.send('/eva sisqo che dice per l ennesima volta di vedere evangelion ');
+        //message.channel.send('/balzo beh.. il king di como lake');
+        //message.channel.send('/fnatic la collaborazione che interessa a sisqo');
+        //message.channel.send('/morto sei morto hiru');
   }
-      break;*/
+      break;
       case '/morto':{
         if (message.member.voice.channel) {
           const connection = await message.member.voice.channel.join();
