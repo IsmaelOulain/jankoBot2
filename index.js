@@ -304,7 +304,7 @@ client.on('message', async message => {
          }
       }
       break;
-      case '/dafuq':{
+      case '/clown':{
         if (message.member.voice.channel) {
           // const ayy = client.emojis.find(emoji => emoji.name === "cha");
            //message.reply(`${ayy} LMAO`);
@@ -313,7 +313,7 @@ client.on('message', async message => {
            
            //message.channel.send(attachment);
            //dispatcher.setVolume(0.8);
-           const dispatcher = connection.play('./record/idy.mp3');
+           const dispatcher = connection.play('./record/clown.mp3');
          } else {
            message.reply('big fail fra');
          }
