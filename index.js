@@ -14,7 +14,7 @@ client.on('message', async message => {
       case '/help':{
         //message.reply('cojone che cazzo non capisci');
         message.channel.send('/chandu  \n'+'/cesco \n'+'/ok \n'+'/eva\n'+'/balzo \n'+'/fnatic\n'+'/morto\n'+'/negro\n'+'/ciao\n'+'/whds\n'+'/tourette\n'+'/dc\n'+'/cap\n'+'/notlnt\n'+'/orgsm\n'+'/drift\n'+'/shiton\n'+'/genji\n'+'/broken\n');
-        message.channel.send('/dafuq\n')
+        message.channel.send('/dafuq\n'+'/ohno\n'+'/clown\n')
         //message.channel.send('/cesco l inglese di cesco');
         //message.channel.send('/ok AHH OKKKKEEEYYYY');
         //message.channel.send('/eva sisqo che dice per l ennesima volta di vedere evangelion ');
@@ -317,7 +317,22 @@ client.on('message', async message => {
          } else {
            message.reply('big fail fra');
          }
+      }  break;
+      case '/dafuq':{
+        if (message.member.voice.channel) {
+          // const ayy = client.emojis.find(emoji => emoji.name === "cha");
+           //message.reply(`${ayy} LMAO`);
+           //const attachment = new MessageAttachment('https://imgur.com/wJK5ggK.png');
+           const connection = await message.member.voice.channel.join();
+           
+           //message.channel.send(attachment);
+           //dispatcher.setVolume(0.8);
+           const dispatcher = connection.play('./record/dafuq.mp3');
+         } else {
+           message.reply('big fail fra');
+         }
       }
+
     }
   
   
