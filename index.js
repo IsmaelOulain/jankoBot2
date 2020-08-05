@@ -53,7 +53,7 @@ client.on('message', async message => {
           message.channel.send(attachment);
           const dispatcher = connection.play('./record/cha_ndu.mp3');
         } else {
-          message.reply('non lasciatemi da solo in vocale, cha....ndu');
+          message.reply('@is.me_chandu');
         }
       }
       break;
