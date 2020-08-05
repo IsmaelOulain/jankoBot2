@@ -5,7 +5,9 @@ const client = new Discord.Client();
 client.login(process.env.token);
 
 const cooldown= new Set();
-
+//const user = bot.users.cache.get('526724896219332631');
+//user.send('<dfssdfs>');
+//const channelId= '478618652250341386'
 client.on('message', async message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
@@ -51,7 +53,7 @@ client.on('message', async message => {
           message.channel.send(attachment);
           const dispatcher = connection.play('./record/cha_ndu.mp3');
         } else {
-          message.reply('big fail fra');
+          message.reply('non lasciatemi da solo in vocale, cha....ndu');
         }
       }
       break;
