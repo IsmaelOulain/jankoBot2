@@ -334,6 +334,15 @@ client.on('message', async message => {
            message.reply('big fail fra');
          }
       }
+      break;
+      case '/stfu':{
+        if (message.member.voice.channel) {
+          const connection = await message.member.voice.channel.join();
+          const dispatcher = connection.play('./record/stfu.mp3');
+        } else {
+          message.reply('a coglione entra in vocale per farlo');
+        }
+      }
 
     }
   
