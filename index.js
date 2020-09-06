@@ -346,7 +346,7 @@ client.on('message', async message => {
         break;
       case '/ciospo':{
         if (message.member.voice.channel) {
-          const attachment = new MessageAttachment('https://imgur.com/a/3BnUmdh.png');
+          const attachment = new MessageAttachment('https://imgur.com/XF2lsG9');
           const connection = await message.member.voice.channel.join();
           message.channel.send(attachment);
           const dispatcher = connection.play('./record/ciospo.opus');
