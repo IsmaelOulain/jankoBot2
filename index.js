@@ -343,6 +343,15 @@ client.on('message', async message => {
           message.reply('a coglione entra in vocale per farlo');
         }
       }
+        break;
+      case '/ciospo':{
+        if (message.member.voice.channel) {
+          const connection = await message.member.voice.channel.join();
+          const dispatcher = connection.play('./record/ciospo.opus');
+        } else {
+          message.reply('a coglione entra in vocale per farlo');
+        }
+      }
 
     }
   
