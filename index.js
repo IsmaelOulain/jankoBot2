@@ -346,7 +346,9 @@ client.on('message', async message => {
         break;
       case '/ciospo':{
         if (message.member.voice.channel) {
+          const attachment = new MessageAttachment('https://imgur.com/a/3BnUmdh.png');
           const connection = await message.member.voice.channel.join();
+          message.channel.send(attachment);
           const dispatcher = connection.play('./record/ciospo.opus');
         } else {
           message.reply('a coglione entra in vocale per farlo');
