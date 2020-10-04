@@ -431,6 +431,28 @@ client.on('message', async message => {
           message.reply('a coglione entra in vocale per farlo');
         }
       }
+           break;
+      case '/bara':{
+        if (message.member.voice.channel) {
+          //const attachment = new MessageAttachment('https://imgur.com/nc4YY3P.png');
+          const connection = await message.member.voice.channel.join();
+          //message.channel.send(attachment);
+          const dispatcher = connection.play('./record/bara.opus');
+        } else {
+          message.reply('a coglione entra in vocale per farlo');
+        }
+      }
+            break;
+      case '/cazzata':{
+        if (message.member.voice.channel) {
+          //const attachment = new MessageAttachment('https://imgur.com/nc4YY3P.png');
+          const connection = await message.member.voice.channel.join();
+          //message.channel.send(attachment);
+          const dispatcher = connection.play('./record/cazzata.opus');
+        } else {
+          message.reply('a coglione entra in vocale per farlo');
+        }
+      }
     }
   
   
