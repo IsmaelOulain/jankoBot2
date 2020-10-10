@@ -464,6 +464,10 @@ client.on('message', async message => {
           message.reply('a coglione entra in vocale per farlo');
         }
       }
+        break;
+      case '/basta':{
+      message.reply('/tts hai rotto il cazzo andre');
+      }
     }
   
   
