@@ -13,7 +13,7 @@ client.on('message', async message => {
   // we ignore it
   if (!message.guild) return;
     switch(message.content){
-      case '/help':{
+      /*case '/help':{
         //message.reply('cojone che cazzo non capisci');
         message.channel.send('/chandu  \n'+'/cesco \n'+'/ok \n'+'/eva\n'+'/balzo \n'+'/fnatic\n'+'/morto\n'+'/negro\n'+'/ciao\n'+'/whds\n'+'/tourette\n'+'/dc\n'+'/cap\n'+'/notlnt\n'+'/orgsm\n'+'/drift\n'+'/shiton\n'+'/genji\n'+'/broken\n');
         message.channel.send('/dafuq\n'+'/ohno\n'+'/clown\n')
@@ -497,6 +497,12 @@ client.on('message', async message => {
         } else {
           message.reply('a coglione entra in vocale per farlo');
         }
+      }*/
+      case '/ombrello':{
+        if (message.member.voice.channel) {
+          const attachment = new MessageAttachment('https://imgur.com/trv3O9O.jpg');
+        }else {
+          message.reply('a coglione entra in vocale per farlo');
       }
  
     }
